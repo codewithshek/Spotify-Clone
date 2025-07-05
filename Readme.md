@@ -36,13 +36,13 @@ spotify-clone/
 ## 🎮 How to Use
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/spotify-clone.git
+   git clone https://github.com/codewithshek/Spotify-Clone.git
 
    ```
 
 2. Navigate to the project folder:
    ```bash
-   cd spotify-clone
+   cd Spotify-Clone
 
    ```
 
@@ -60,11 +60,9 @@ spotify-clone/
 
 ---
 
-## 📸 Screenshots
-- 🎼 Desktop View  
-- 🎛️ Music Player  
+## 📸 Preview
 
-You can take your own screenshots and save them as `screenshot.png` and `player.png` in the `assets/` folder.
+![image](https://github.com/user-attachments/assets/2b001294-48e0-47ea-a8ab-ee1fe377833f)
 
 ---
 
@@ -72,16 +70,13 @@ You can take your own screenshots and save them as `screenshot.png` and `player.
 - **Images** (album covers, icons, logos) – in `/assets/`
 - **Audio file** – `Finding Her.mp4`
 - **Fonts** – Google Fonts: Montserrat
-- **Icons** – Font Awesome
-- **Pause icon** – `pause-icon.png` (you need to include this manually)
+- **Icons** – Font Awesome 
 
 ---
 
 ## 📝 Notes
 - This is a **frontend-only clone** — no backend or API integrations.
 - Built strictly for **learning and UI prototyping purposes**.
-- Make sure `pause-icon.png` is available inside the `assets/` folder to see the pause state.
-
 ---
 
 ## 🙌 Credits
