@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player</title>
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/logo.png">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Main container -->
+    <div class="main">
+        <!-- Sidebar navigation -->
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+
+            <!-- Library section -->
+            <div class="library">
+                <div class="option">
+                    <div class="lib-option nav-option">
+                        <img src="./assets/library_icon.png">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Playlist and Podcast prompts -->
+                <div class="lib-box">
+                    <div class="box">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">Let's find some podcasts to follow</p>
+                        <p class="box-p2">We'll keep you updated on new episodes</p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main content area -->
+        <div class="main-content">
+            <!-- Sticky nav bar -->
+            <div class="sticky-nav">
+                <div class="sticky-nav-icon">
+                    <img src="./assets/backward_icon.png">
+                    <img src="./assets/forward_icon.png" class="hide">
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge navitem hide">Explore Premium</button>
+                    <button class="badge navitem darkbadge">
+                        <i class="fa-regular fa-circle-down" style="margin-left:5px;font-size:10px"></i> Install App
+                    </button>
+                    <i class="fa-regular fa-user navitem"></i>
+                </div>
+            </div>
+
+            <!-- Content sections -->
+            <div class="content">
+                <h2>Recently played</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img class="card-img" src="./assets/card1img.jpeg">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of most played tracks...</p>
+                    </div>
+                </div>
+
+                <h2>Trending now near you</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img class="card-img" src="./assets/card7img.png" style="height: 128px; width: 128px;">
+                        <p class="card-title">Lose My Mind</p>
+                        <p class="card-info">Don Toliver, Doja Cat</p>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="./assets/card8img.png">
+                        <p class="card-title">Jhol</p>
+                        <p class="card-info">Annural Khalid, Maanu</p>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="./assets/card4img.png">
+                        <p class="card-title">Finding Her</p>
+                        <p class="card-info">Kushagra, Bharath, Saaheal</p>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="./assets/card2img.jpeg">
+                        <p class="card-title">Mahiye jinna sohna</p>
+                        <p class="card-info">Darshan Raval</p>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="./assets/card3img.jpeg">
+                        <p class="card-title">Meray Pass Tum Ho</p>
+                        <p class="card-info">Rahat Fateh Ali Khan</p>
+                    </div>
+                </div>
+
+                <h2>Featured Chart</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img class="card-img" src="./assets/card5img.jpeg">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of most played tracks...</p>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="./assets/card6img.jpeg">
+                        <p class="card-title">Top 50 - India</p>
+                        <p class="card-info">Your daily updates of most played tracks...</p>
+                    </div>
+                </div>
+
+                <!-- Footer line -->
+                <div class="footer">
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom music player bar -->
+    <div class="music-player">
+        <!-- Album display -->
+        <div class="album">
+            <img src="./assets/card4img.png" class="album-pic">
+            <div class="album-abt">
+                <p class="abt-1">Finding Her</p>
+                <p class="abt-2">Kushagra, Bharath, Saaheal</p>
+            </div>
+            <i class="fa-regular fa-heart heart-icon"></i>
+            <img src="./assets/album_icon2.png" class="album-icon2" style="margin-top:2px">
+        </div>
+
+        <!-- Central music control section -->
+        <div class="player">
+            <div class="music-control">
+                <img class="music-icons" src="./assets/player_icon1.png">
+                <img class="music-icons" src="./assets/player_icon2.png">
+                <img id="playBtn" onclick="togglePlay()" class="music-icons play" src="./assets/player_icon3.png">
+                <audio id="myAudio" src="./assets/Finding Her.mp4"></audio>
+                <img class="music-icons" src="./assets/player_icon4.png">
+                <img class="music-icons" src="./assets/player_icon5.png">
+            </div>
+            <div class="playback">
+                <span class="time" id="currentTime">00:00</span>
+                <input type="range" min="0" max="100" value="0" step="1" class="playback-bar bar" id="progressBar">
+                <span class="time" id="duration">3:33</span>
+            </div>
+        </div>
+
+        <!-- Additional controls (volume etc.) -->
+        <div class="controls">
+            <img src="./assets/controls_icon1.png" class="ctrl-icon control">
+            <img src="./assets/controld_icon2.png" class="ctrl-icon control">
+            <img src="./assets/controls_icon3.png" class="ctrl-iconx control">
+            <img src="./assets/controls_icon4.png" class="ctrl-icony control">
+            <label for="volumn"><img src="./assets/controls_icon5.png" class="ctrl-icon"></label>
+            <input type="range" min="0" max="100" value="100" class="volumn-bar bar" id="volumn">
+        </div>
+    </div>
+
+    <!-- JavaScript for player functionality -->
+    <script>
+    // Get references to HTML elements
+    const audio = document.getElementById("myAudio");             // Audio element
+    const playBtn = document.getElementById("playBtn");           // Play/Pause button image
+    const progressBar = document.getElementById("progressBar");   // Range input for song progress
+    const currentTimeSpan = document.getElementById("currentTime"); // Element to show current time
+    const durationSpan = document.getElementById("duration");       // Element to show total duration
+    const volumeSlider = document.getElementById("volumn");         // Range input for volume control
+
+    let isPlaying = false; // Track whether music is currently playing
+
+    // Function to toggle play and pause
+    function togglePlay() {
+        if (isPlaying) {
+            audio.pause(); // Pause the audio
+            playBtn.src = "./assets/player_icon3.png"; // Change icon to play
+        } else {
+            audio.play(); // Play the audio
+            playBtn.src = "./assets/pause-icon.png"; // Change icon to pause (ensure this file exists)
+        }
+        isPlaying = !isPlaying; // Toggle play state
+    }
+
+    // Event listener to update progress bar and current time as audio plays
+    audio.addEventListener("timeupdate", () => {
+        if (audio.duration) {
+            const progress = (audio.currentTime / audio.duration) * 100; // Calculate progress percentage
+            progressBar.value = progress; // Set range slider value
+            currentTimeSpan.textContent = formatTime(audio.currentTime); // Update current time display
+        }
+    });
+
+    // Allow seeking by dragging the progress bar
+    progressBar.addEventListener("input", () => {
+        const seekTime = (progressBar.value / 100) * audio.duration; // Calculate new time to jump to
+        audio.currentTime = seekTime; // Update audio current time
+    });
+
+    // Utility function to format time from seconds to MM:SS
+    function formatTime(seconds) {
+        const mins = Math.floor(seconds / 60);
+        const secs = Math.floor(seconds % 60);
+        return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+    }
+
+    // Set total duration once audio metadata is loaded
+    audio.addEventListener("loadedmetadata", () => {
+        durationSpan.textContent = formatTime(audio.duration); // Display full song duration
+    });
+
+    // Set initial volume to 100%
+    audio.volume = 1.0;
+
+    // Adjust volume when user moves the volume slider
+    volumeSlider.addEventListener("input", () => {
+        audio.volume = volumeSlider.value / 100; // Convert slider (0–100) to audio volume (0.0–1.0)
+    });
+</script>
+
+</body>
+
+</html>
