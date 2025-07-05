@@ -16,14 +16,13 @@ A simplified Spotify Web Player UI Clone built with pure HTML, CSS, and a single
 ---
 
 ## 📂 Project Structure
-'''
+```
 spotify-clone/
 ├── index.html   # Main HTML file
 ├── style.css    # Styling using pure CSS
 ├── assets/      # All images, icons, audio & pause icon
 └── README.md    # Project documentation
-'''
-
+```
 
 ---
 
